@@ -1,0 +1,30 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="{% static 'css/test360.css' %}">
+    <title>Category</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="title left">
+                <a class="title" href="{% url 'category:index' %}">
+                    <h1>Category</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main a-main">
+      {% block main %}{% endblock %}
+    </div>
+
+</body>
+</html>

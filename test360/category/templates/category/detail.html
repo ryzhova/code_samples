@@ -1,0 +1,29 @@
+{% extends 'main.html'%}
+
+{% block main %}
+
+    <div>
+        {% for i in category.get_bread_crumbs %}
+            <a href="{% url 'category:detail' i.id %}">{{ i }}</a> &rarr;
+        {% endfor %}
+        {{ category }}
+    </div>
+
+    <div class="space"></div>
+
+    <div>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Изменить" />
+        </form>
+    </div>
+
+    <div>
+        <form action="{% url 'category:delete' category_id=category.id %}" method="post">
+            {% csrf_token %}
+            <p><input type="submit" value="Удалить" /></p>
+        </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'main.html'%}
+
+{% block main %}
+
+
+    <div>
+        <div>
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" value="Создать" />
+            </form>
+        </div>
+
+        <div class="space"></div>
+
+        <div>
+            {% for i in out %}
+                <p style="padding-left: {{ i.depth }}%;">
+                    <a href="{% url 'category:detail' i.id %}">{{ i }}</a>
+                </p>
+            {% endfor %}
+        </div>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,89 @@
+@import url(http://allfont.ru/allfont.css?fonts=lobster);
+
+@font-face {
+  font-family: 'FreeSet Cyrillic';
+  src: url(fonts/freeset-cyrillic.ttf);
+}
+
+body {
+  width: 1000px;
+  margin: auto;
+}
+
+div.left {
+    float: left;
+}
+
+div.header {
+  background-color: #ff9400;
+  height: 250px;
+  color: #fff;
+  width: 1000px;
+  padding-left: 20px;
+}
+
+.title {
+    font-family: 'Lobster', arial;
+    font-size: 72px;
+    line-height: 0.5;
+    text-decoration: none;
+}
+
+a.title:link {
+  color: #fff;
+}
+
+a.title:visited {
+  color: #fff;
+}
+
+a.title:hover {
+  color: #fff;
+}
+
+a.title:active {
+  color: #fff;
+}
+
+div.space {
+  height: 50px;
+}
+
+.main {
+  font-family: 'FreeSet Cyrillic', arial;
+  color: #1A1818;
+  font-size: 16px;
+  text-align: justify;
+  margin-top: 50px;
+}
+
+.a-main:link {
+  color: #1A1818;
+}
+
+.a-main:visited {
+  color: #595959;
+}
+
+.a-main:hover {
+  color: #000;
+}
+
+.a-main:active {
+  color: #000; 
+}
+
+ul {
+  background-color: #F0F0F0;
+  box-shadow: 0 4px 0 0 #CCCCCC;
+  margin: 0;
+  padding: 0 30px;
+}
+
+ul.liclass >li {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 40px;
+}

@@ -1,0 +1,7 @@
+The input data of the service is the text field (for category name) for adding a new category.
+
+The output data of the service should be presented in two pages:
+
+1. Main page. This page should contain a category tree. Category names should be links leading to the pages of the relevant categories. The page should also have a form for adding new categories, containing two fields: the selection of the parent category (an empty value to add to the first level of the list) and the field for entering the category name.
+
+2. Category page. This page should contain breadcrumbs displaying the position of the current category in the catalog structure. The page should also have a category name and a button to delete it and save it. When you delete a category, all subcategories must be deleted.

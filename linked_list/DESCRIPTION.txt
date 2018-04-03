@@ -1,0 +1,7 @@
+linked_list.py - tasks were:
+- print reverse single linked list
+- write function that can find the loop beginning in single linked list
+- the same as previous but  function requires O(1) memory and computational complexity O(N) where N is list lenght
+
+
+linked_list_rand.py - single linked list with additional random pointer. Task was to copy this list without additional memory and computational complexity O(n).
